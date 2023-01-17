@@ -1,0 +1,1262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>380</width>
+    <height>560</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>380</width>
+    <height>450</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>380</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="windowIcon">
+   <iconset theme="battery">
+    <normaloff>.</normaloff>.</iconset>
+  </property>
+  <property name="toolTipDuration">
+   <number>-1</number>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">color: rgb(255, 147, 0);
+</string>
+  </property>
+  <property name="toolButtonStyle">
+   <enum>Qt::ToolButtonIconOnly</enum>
+  </property>
+  <property name="animated">
+   <bool>true</bool>
+  </property>
+  <property name="tabShape">
+   <enum>QTabWidget::Rounded</enum>
+  </property>
+  <property name="dockNestingEnabled">
+   <bool>false</bool>
+  </property>
+  <property name="unifiedTitleAndToolBarOnMac">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>373</width>
+      <height>468</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <property name="spacing">
+      <number>-1</number>
+     </property>
+     <property name="sizeConstraint">
+      <enum>QLayout::SetDefaultConstraint</enum>
+     </property>
+     <property name="leftMargin">
+      <number>0</number>
+     </property>
+     <property name="rightMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QTableWidget" name="sudoku_board">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>9</horstretch>
+         <verstretch>9</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>363</width>
+         <height>273</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>364</width>
+         <height>275</height>
+        </size>
+       </property>
+       <property name="palette">
+        <palette>
+         <active>
+          <colorrole role="WindowText">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>255</red>
+             <green>147</green>
+             <blue>0</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="Button">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>57</red>
+             <green>58</green>
+             <blue>60</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="Text">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>255</red>
+             <green>147</green>
+             <blue>0</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="ButtonText">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>255</red>
+             <green>147</green>
+             <blue>0</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="Base">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>57</red>
+             <green>58</green>
+             <blue>60</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="Window">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>57</red>
+             <green>58</green>
+             <blue>60</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="PlaceholderText">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>255</red>
+             <green>147</green>
+             <blue>0</blue>
+            </color>
+           </brush>
+          </colorrole>
+         </active>
+         <inactive>
+          <colorrole role="WindowText">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>255</red>
+             <green>147</green>
+             <blue>0</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="Button">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>57</red>
+             <green>58</green>
+             <blue>60</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="Text">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>255</red>
+             <green>147</green>
+             <blue>0</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="ButtonText">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>255</red>
+             <green>147</green>
+             <blue>0</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="Base">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>57</red>
+             <green>58</green>
+             <blue>60</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="Window">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>57</red>
+             <green>58</green>
+             <blue>60</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="PlaceholderText">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>255</red>
+             <green>147</green>
+             <blue>0</blue>
+            </color>
+           </brush>
+          </colorrole>
+         </inactive>
+         <disabled>
+          <colorrole role="WindowText">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>255</red>
+             <green>147</green>
+             <blue>0</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="Button">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>57</red>
+             <green>58</green>
+             <blue>60</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="Text">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>255</red>
+             <green>147</green>
+             <blue>0</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="ButtonText">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>255</red>
+             <green>147</green>
+             <blue>0</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="Base">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>57</red>
+             <green>58</green>
+             <blue>60</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="Window">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>57</red>
+             <green>58</green>
+             <blue>60</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="PlaceholderText">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>255</red>
+             <green>147</green>
+             <blue>0</blue>
+            </color>
+           </brush>
+          </colorrole>
+         </disabled>
+        </palette>
+       </property>
+       <property name="cursor" stdset="0">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="tabletTracking">
+        <bool>false</bool>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::StrongFocus</enum>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+QTableWidget {
+border:1px solid rgb(45, 45, 45);
+background: rgb(57, 58, 60);
+gridline-color: rgb(255, 255, 255);
+
+
+
+}
+
+QTableWidget::section:horizontal{
+	
+
+	
+}
+QTableWidget::section:vertical{
+  
+
+}</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Sunken</enum>
+       </property>
+       <property name="lineWidth">
+        <number>1</number>
+       </property>
+       <property name="midLineWidth">
+        <number>0</number>
+       </property>
+       <property name="verticalScrollBarPolicy">
+        <enum>Qt::ScrollBarAlwaysOff</enum>
+       </property>
+       <property name="horizontalScrollBarPolicy">
+        <enum>Qt::ScrollBarAlwaysOff</enum>
+       </property>
+       <property name="editTriggers">
+        <set>QAbstractItemView::NoEditTriggers</set>
+       </property>
+       <property name="textElideMode">
+        <enum>Qt::ElideMiddle</enum>
+       </property>
+       <property name="gridStyle">
+        <enum>Qt::SolidLine</enum>
+       </property>
+       <property name="sortingEnabled">
+        <bool>false</bool>
+       </property>
+       <attribute name="horizontalHeaderVisible">
+        <bool>false</bool>
+       </attribute>
+       <attribute name="horizontalHeaderMinimumSectionSize">
+        <number>40</number>
+       </attribute>
+       <attribute name="horizontalHeaderDefaultSectionSize">
+        <number>40</number>
+       </attribute>
+       <attribute name="horizontalHeaderHighlightSections">
+        <bool>true</bool>
+       </attribute>
+       <attribute name="verticalHeaderVisible">
+        <bool>false</bool>
+       </attribute>
+       <row>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="textAlignment">
+         <set>AlignCenter</set>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string/>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string/>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string/>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string/>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string/>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string/>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string/>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string/>
+        </property>
+       </row>
+       <column>
+        <property name="text">
+         <string/>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string/>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string/>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string/>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string/>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string/>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string/>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string/>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string/>
+        </property>
+       </column>
+       <item row="0" column="0">
+        <property name="text">
+         <string>0</string>
+        </property>
+        <property name="textAlignment">
+         <set>AlignCenter</set>
+        </property>
+       </item>
+       <item row="0" column="1">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </item>
+       <item row="0" column="2">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </item>
+       <item row="0" column="3">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </item>
+       <item row="0" column="4">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </item>
+       <item row="0" column="5">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </item>
+       <item row="0" column="6">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </item>
+       <item row="0" column="7">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </item>
+       <item row="0" column="8">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </item>
+       <item row="1" column="0">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </item>
+       <item row="1" column="1">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </item>
+       <item row="1" column="2">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </item>
+       <item row="1" column="3">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </item>
+       <item row="1" column="4">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </item>
+       <item row="1" column="5">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </item>
+       <item row="1" column="6">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </item>
+       <item row="1" column="7">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </item>
+       <item row="1" column="8">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </item>
+       <item row="2" column="0">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </item>
+       <item row="2" column="1">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </item>
+       <item row="2" column="2">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </item>
+       <item row="2" column="3">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </item>
+       <item row="2" column="4">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </item>
+       <item row="2" column="5">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </item>
+       <item row="2" column="6">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </item>
+       <item row="2" column="7">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </item>
+       <item row="2" column="8">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </item>
+       <item row="3" column="0">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </item>
+       <item row="3" column="1">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </item>
+       <item row="3" column="2">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </item>
+       <item row="3" column="3">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </item>
+       <item row="3" column="4">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </item>
+       <item row="3" column="5">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </item>
+       <item row="3" column="6">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </item>
+       <item row="3" column="7">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </item>
+       <item row="3" column="8">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </item>
+       <item row="4" column="0">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </item>
+       <item row="4" column="1">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </item>
+       <item row="4" column="2">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </item>
+       <item row="4" column="3">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </item>
+       <item row="4" column="4">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </item>
+       <item row="4" column="5">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </item>
+       <item row="4" column="6">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </item>
+       <item row="4" column="7">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </item>
+       <item row="4" column="8">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </item>
+       <item row="5" column="0">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </item>
+       <item row="5" column="1">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </item>
+       <item row="5" column="2">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </item>
+       <item row="5" column="3">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </item>
+       <item row="5" column="4">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </item>
+       <item row="5" column="5">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </item>
+       <item row="5" column="6">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </item>
+       <item row="5" column="7">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </item>
+       <item row="5" column="8">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </item>
+       <item row="6" column="0">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </item>
+       <item row="6" column="1">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </item>
+       <item row="6" column="2">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </item>
+       <item row="6" column="3">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </item>
+       <item row="6" column="4">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </item>
+       <item row="6" column="5">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </item>
+       <item row="6" column="6">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </item>
+       <item row="6" column="7">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </item>
+       <item row="6" column="8">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </item>
+       <item row="7" column="0">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </item>
+       <item row="7" column="1">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </item>
+       <item row="7" column="2">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </item>
+       <item row="7" column="3">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </item>
+       <item row="7" column="4">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </item>
+       <item row="7" column="5">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </item>
+       <item row="7" column="6">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </item>
+       <item row="7" column="7">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </item>
+       <item row="7" column="8">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </item>
+       <item row="8" column="0">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </item>
+       <item row="8" column="1">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </item>
+       <item row="8" column="2">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </item>
+       <item row="8" column="3">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </item>
+       <item row="8" column="4">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </item>
+       <item row="8" column="5">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </item>
+       <item row="8" column="6">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </item>
+       <item row="8" column="7">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </item>
+       <item row="8" column="8">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <layout class="QGridLayout" name="gridLayout" rowstretch="0,0,0">
+           <property name="sizeConstraint">
+            <enum>QLayout::SetDefaultConstraint</enum>
+           </property>
+           <item row="1" column="1">
+            <widget class="QPushButton" name="bush_button_5">
+             <property name="text">
+              <string>5</string>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">keypad_group</string>
+             </attribute>
+            </widget>
+           </item>
+           <item row="0" column="2">
+            <widget class="QPushButton" name="bush_button_3">
+             <property name="text">
+              <string>3</string>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">keypad_group</string>
+             </attribute>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QPushButton" name="bush_button_1">
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="text">
+              <string>1</string>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">keypad_group</string>
+             </attribute>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QPushButton" name="bush_button_8">
+             <property name="text">
+              <string>8</string>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">keypad_group</string>
+             </attribute>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QPushButton" name="bush_button_2">
+             <property name="text">
+              <string>2</string>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">keypad_group</string>
+             </attribute>
+            </widget>
+           </item>
+           <item row="2" column="2">
+            <widget class="QPushButton" name="bush_button_9">
+             <property name="text">
+              <string>9</string>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">keypad_group</string>
+             </attribute>
+            </widget>
+           </item>
+           <item row="1" column="2">
+            <widget class="QPushButton" name="bush_button_6">
+             <property name="text">
+              <string>6</string>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">keypad_group</string>
+             </attribute>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QPushButton" name="bush_button_7">
+             <property name="text">
+              <string>7</string>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">keypad_group</string>
+             </attribute>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QPushButton" name="bush_button_4">
+             <property name="text">
+              <string>4</string>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">keypad_group</string>
+             </attribute>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QPushButton" name="erase_button">
+           <property name="maximumSize">
+            <size>
+             <width>180000</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+font: 700 13pt &quot;Times New Roman&quot;;
+}
+ 
+
+QPushButton:hover {
+
+
+	
+}
+ 
+QPushButton:pressed {
+	
+	color: rgb(255, 147, 0);
+
+}</string>
+           </property>
+           <property name="text">
+            <string>Erase</string>
+           </property>
+           <property name="autoDefault">
+            <bool>false</bool>
+           </property>
+           <property name="default">
+            <bool>false</bool>
+           </property>
+           <property name="flat">
+            <bool>false</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">keypad_group</string>
+           </attribute>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QGridLayout" name="gridLayout_2">
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>12</number>
+         </property>
+         <item row="4" column="0">
+          <widget class="QPushButton" name="new_game">
+           <property name="maximumSize">
+            <size>
+             <width>1800000</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+color: rgb(255, 255, 255);
+border: 2px solid;
+border-color: rgb(0, 143, 0);
+border-radius: 5px;
+padding: 5px;
+background-color: rgb(94, 94, 94);
+font: 700 13pt &quot;Times New Roman&quot;;
+}
+ 
+QPushButton:hover {
+	background-color: rgb(0, 143, 0);
+}
+ 
+QPushButton:pressed {
+}</string>
+           </property>
+           <property name="text">
+            <string>New Game</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QPushButton" name="solve_button">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.AppleSystemUIFont'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+color: rgb(255, 255, 255);
+border: 2px solid;
+border-color: rgb(0, 143, 0);
+border-radius: 5px;
+padding: 5px;
+background-color: rgb(94, 94, 94);
+font: 700 13pt &quot;Times New Roman&quot;;
+}
+ 
+QPushButton:hover {
+	background-color: rgb(0, 143, 0);
+}
+ 
+QPushButton:pressed {
+}</string>
+           </property>
+           <property name="text">
+            <string>Solve</string>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>16</width>
+             <height>16</height>
+            </size>
+           </property>
+           <property name="checkable">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QRadioButton" name="hard_buttom">
+           <property name="styleSheet">
+            <string notr="true">QRadioButton {
+  color: #fff;
+ font: 700 13pt &quot;Times New Roman&quot;;
+  padding: 0px;
+
+
+}
+ 
+QRadioButton:hover {
+	
+	color: rgb(0, 143, 0);
+	padding:2px;
+}
+ 
+QRadioButton:pressed {
+	
+
+}</string>
+           </property>
+           <property name="text">
+            <string>Hard</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QRadioButton" name="medium_button">
+           <property name="styleSheet">
+            <string notr="true">QRadioButton {
+  color: #fff;
+ font: 700 13pt &quot;Times New Roman&quot;;
+  padding: 0px;
+
+
+}
+ 
+QRadioButton:hover {
+	
+	color: rgb(0, 143, 0);
+	padding:2px;
+}
+ 
+QRadioButton:pressed {
+	
+
+}</string>
+           </property>
+           <property name="text">
+            <string>Medium</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QRadioButton" name="easy_button">
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QRadioButton {
+  color: #fff;
+  font: 700 13pt &quot;Times New Roman&quot;;
+  padding: 0px;
+
+
+
+}
+ 
+QRadioButton:hover {
+	
+	color: rgb(0, 143, 0);
+	padding:2px;
+}
+ 
+QRadioButton:pressed {
+	
+
+}</string>
+           </property>
+           <property name="text">
+            <string>Easy</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>380</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menusudoku">
+    <property name="title">
+     <string>sudoku</string>
+    </property>
+    <addaction name="separator"/>
+   </widget>
+   <addaction name="menusudoku"/>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+ <buttongroups>
+  <buttongroup name="keypad_group"/>
+ </buttongroups>
+</ui>
